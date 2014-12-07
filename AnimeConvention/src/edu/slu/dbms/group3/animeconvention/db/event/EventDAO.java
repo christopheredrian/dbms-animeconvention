@@ -1,5 +1,6 @@
-package edu.slu.thirdgroup.animeconvention.db;
+package edu.slu.dbms.group3.animeconvention.db.event;
 
+import edu.slu.dbms.group3.animeconvention.db.badgetype.BadgeType;
 import java.util.List;
 import javax.sql.DataSource;
 
@@ -23,24 +24,25 @@ public interface EventDAO {
      * @param bean
      */
     public void create(Event bean);
-    
+
     /**
-     * This is the method to be used to list down a record from the Event
-     * table corresponding to a passed eventId.
+     * This is the method to be used to list down a record from the Event table
+     * corresponding to a passed eventId.
      *
      * @param eventId
      * @return
      */
-    public BadgeType getEvent(Integer eventId);
+    public Event getEvent(Integer eventId);
+
     /**
-     * This is the method to be used to list down all the records from the
-     * Event table.
+     * This is the method to be used to list down all the records from the Event
+     * table.
      *
-     * 
-     * @return 
+     *
+     * @return
      */
-    public List<BadgeType> listAllEvents();
-    
+    public List<Event> listAllEvents();
+
     /**
      * This is the method to be used to delete a record from the BadgeType table
      * corresponding to a passed Event id.
@@ -50,8 +52,7 @@ public interface EventDAO {
     public void delete(Integer id);
 
     /**
-     * This is the method to be used to update a record into the Event
-     * table.
+     * This is the method to be used to update a record into the Event table.
      *
      * @param id
      * @param eventDesc
@@ -59,9 +60,8 @@ public interface EventDAO {
      * @param location
      * @param slots
      * @param status
-
+     *
      */
-
-    public void update(Integer id, String eventDesc,String eventType,
-            String location,int slots,boolean status);
+    public void update(Integer id, String eventDesc, String eventType,
+            String location, int slots, String status);
 }

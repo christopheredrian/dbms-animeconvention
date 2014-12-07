@@ -8,14 +8,22 @@
    <bean id="dataSource" 
       class="org.springframework.jdbc.datasource.DriverManagerDataSource">
       <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-      <property name="url" value="jdbc:mysql://192.168.8.100:3306/anicondb"/>
-      <property name="username" value="chris"/>
+      <!--Below is for connectng to Danna's database-->
+      <!--<property name="url" value="jdbc:mysql://192.168.8.100:3306/anicondb"/>--> 
+      <!--This is for connecting to the local database-->
+      <property name="url" value="jdbc:mysql://localhost:3306/anicondb"/>
+      <!--Change username to "Chris" for Danna's database-->
+      <property name="username" value="root"/> 
       <property name="password" value=""/>
    </bean>
 
-   <!-- Definition for studentJDBCTemplate bean -->
+   <!-- Definition for badgeTypeJDBCTemplate bean -->
    <bean id="badgeTypeJDBCTemplate" 
-      class="edu.slu.thirdgroup.animeconvention.db.BadgeTypeJDBCTemplate">
+      class="edu.slu.dbms.group3.animeconvention.db.badgetype.BadgeTypeJDBCTemplate">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean>
+      <bean id="eventJDBCTemplate" 
+      class="edu.slu.dbms.group3.animeconvention.db.event.EventJDBCTemplate">
       <property name="dataSource"  ref="dataSource" />    
    </bean>
       

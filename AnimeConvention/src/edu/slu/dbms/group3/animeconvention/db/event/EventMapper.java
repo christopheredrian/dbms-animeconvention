@@ -1,4 +1,4 @@
-package edu.slu.thirdgroup.animeconvention.db;
+package edu.slu.dbms.group3.animeconvention.db.event;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,7 +18,7 @@ public class EventMapper implements RowMapper<Event>{
         event.setEventName(rs.getString("eventName"));
         event.setEventType(rs.getString("eventType"));
         event.setLocation(rs.getString("location"));
-        event.setOngoing(rs.getBoolean("ongoing"));
+        event.setStatus(rs.getString("status"));
         event.setSlots(rs.getInt("slots"));
         return event;
     }

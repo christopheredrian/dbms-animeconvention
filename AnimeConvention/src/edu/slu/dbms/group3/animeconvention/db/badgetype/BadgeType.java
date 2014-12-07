@@ -1,5 +1,5 @@
 
-package edu.slu.thirdgroup.animeconvention.db;
+package edu.slu.dbms.group3.animeconvention.db.badgetype;
 
 /**
  *

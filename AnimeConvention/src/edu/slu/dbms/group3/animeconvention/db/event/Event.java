@@ -1,4 +1,4 @@
-package edu.slu.thirdgroup.animeconvention.db;
+package edu.slu.dbms.group3.animeconvention.db.event;
 
 /**
  *
@@ -12,15 +12,17 @@ public class Event {
     private String eventType;
     private String location;
     private int slots;
-    private boolean ongoing;
+    private String Status;
 
-    public boolean isOngoing() {
-        return ongoing;
+    public String getStatus() {
+        return Status;
     }
 
-    public void setOngoing(boolean ongoing) {
-        this.ongoing = ongoing;
+    public void setStatus(String Status) {
+        this.Status = Status;
     }
+
+  
 
     /**
      * @return the eventId
@@ -105,4 +107,15 @@ public class Event {
     public void setSlots(int slots) {
         this.slots = slots;
     }
+
+    @Override
+    public String toString() {
+        return "Event{" + "eventId=" + eventId + ", eventName=" + eventName + ", "
+                + "eventDesc=" + eventDesc + ", eventType=" + eventType + ","
+                + " location=" + location + ", slots=" + slots + ", Status=" + 
+                Status + '}';
+    }
+    
+    
+    
 }
