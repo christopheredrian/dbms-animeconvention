@@ -30,5 +30,9 @@
               class="edu.slu.dbms.anicon.db.ticket.TicketJDBCTemplate">
         <property name="dataSource"  ref="dataSource" />    
     </bean>
+    <bean id="badgeJDBCTemplate" 
+              class="edu.slu.dbms.anicon.db.badge.BadgeJDBCTemplate">
+        <property name="dataSource"  ref="dataSource" />    
+    </bean>
       
 </beans>

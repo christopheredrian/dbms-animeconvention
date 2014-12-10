@@ -5,14 +5,13 @@
  */
 import edu.slu.dbms.anicon.db.ticket.Ticket;
 import edu.slu.dbms.anicon.db.ticket.TicketJDBCTemplate;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
-import junit.framework.Assert;
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,7 +19,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *
  * @author Chris
  */
-public class TicketTester {
+public class TicketJDBCTemplateTester {
     
     private ApplicationContext context= new ClassPathXmlApplicationContext("Beans.xml");
     private TicketJDBCTemplate jdbcTemplate = (TicketJDBCTemplate) context.getBean("ticketJDBCTemplate");
@@ -35,6 +34,13 @@ public class TicketTester {
     }
     
     //@Test
+    public void testTicketUpdate(){
+        System.out.println("Updating ticket info");
+        jdbcTemplate.updateTicket(1, null,null , new Date(Calendar.getInstance().getTimeInMillis()));
+        jdbcTemplate.updateTicket(1, null,null , null);
+    }
+    
+    @Test
     public void testListAllTickets(){
         System.out.println("Listing all tickets");
         List<Ticket> tickets = jdbcTemplate.listAllTickets();

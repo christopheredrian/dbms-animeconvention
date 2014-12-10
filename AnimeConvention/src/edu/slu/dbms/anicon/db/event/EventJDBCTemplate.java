@@ -1,6 +1,5 @@
 package edu.slu.dbms.anicon.db.event;
 
-import edu.slu.dbms.anicon.db.badgetype.BadgeType;
 import java.util.List;
 import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;

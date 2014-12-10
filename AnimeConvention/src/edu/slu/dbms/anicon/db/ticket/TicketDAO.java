@@ -1,5 +1,6 @@
 package edu.slu.dbms.anicon.db.ticket;
 
+import java.util.Date;
 import java.util.List;
 import javax.sql.DataSource;
 
@@ -49,5 +50,15 @@ public interface TicketDAO {
      * @param used if it is used 
      */
     public void updateTicketStatus(Integer ticketNo, boolean used);
+    
+    /**
+     * Method for updating payId, badgeId, dateClaimed put null on no values
+     * @param ticketNo
+     * @param payId
+     * @param badgeId
+     * @param dateClaimed
+     */
+    public void updateTicket(Integer ticketNo, Integer payId,
+            Integer badgeId, Date dateClaimed);
     
 }
