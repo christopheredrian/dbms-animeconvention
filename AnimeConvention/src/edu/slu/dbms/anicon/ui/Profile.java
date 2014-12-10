@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package edu.slu.dbms.group3.animeconvention.ui;
+package edu.slu.dbms.anicon.ui;
 
 /**
  *

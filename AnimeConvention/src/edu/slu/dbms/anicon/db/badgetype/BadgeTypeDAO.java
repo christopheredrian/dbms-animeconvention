@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.slu.dbms.group3.animeconvention.db.badgetype;
+package edu.slu.dbms.anicon.db.badgetype;
 
 import java.util.List;
 import javax.sql.DataSource;

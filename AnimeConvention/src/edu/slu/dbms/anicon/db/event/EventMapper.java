@@ -1,4 +1,4 @@
-package edu.slu.dbms.group3.animeconvention.db.event;
+package edu.slu.dbms.anicon.db.event;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

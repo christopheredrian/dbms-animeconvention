@@ -1,6 +1,6 @@
-package edu.slu.dbms.group3.animeconvention.db.event;
+package edu.slu.dbms.anicon.db.event;
 
-import edu.slu.dbms.group3.animeconvention.db.badgetype.BadgeType;
+import edu.slu.dbms.anicon.db.badgetype.BadgeType;
 import java.util.List;
 import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;

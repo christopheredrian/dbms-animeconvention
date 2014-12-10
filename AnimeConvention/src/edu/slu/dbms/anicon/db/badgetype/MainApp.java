@@ -1,5 +1,5 @@
 
-package edu.slu.dbms.group3.animeconvention.db.badgetype;
+package edu.slu.dbms.anicon.db.badgetype;
 
 import java.text.DateFormat;
 import java.time.Month;

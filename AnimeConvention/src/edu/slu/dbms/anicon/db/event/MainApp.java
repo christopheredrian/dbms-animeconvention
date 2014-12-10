@@ -1,5 +1,5 @@
 
-package edu.slu.dbms.group3.animeconvention.db.event;
+package edu.slu.dbms.anicon.db.event;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
