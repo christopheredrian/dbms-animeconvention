@@ -1,4 +1,4 @@
-package edu.slu.dbms.anicon.ui.event;
+package edu.slu.dbms.anicon.ui.eventschedule;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

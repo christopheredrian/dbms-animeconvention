@@ -25,14 +25,14 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="27" max="32767" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" pref="265" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <Component id="jButton2" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+              <Component id="jButton1" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -41,13 +41,13 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton1" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jButton1" pref="41" max="32767" attributes="0"/>
+                  <Component id="jButton2" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="20" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -67,8 +67,8 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" pref="550" max="-2" attributes="0"/>
-                  <EmptySpace pref="24" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" pref="550" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -93,28 +93,55 @@
             <Component class="javax.swing.JTable" name="jTable1">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="7" rowCount="4">
+                  <Table columnCount="7" rowCount="5">
                     <Column editable="true" title="Ticket No" type="java.lang.Object">
-                      <Data value="01"/>
-                      <Data value="02"/>
-                      <Data value="03"/>
-                      <Data value="04"/>
+                      <Data value="4001"/>
+                      <Data value="4002"/>
+                      <Data value="4003"/>
+                      <Data value="4004"/>
+                      <Data value="4005"/>
                     </Column>
-                    <Column editable="true" title="Type" type="java.lang.Object"/>
+                    <Column editable="true" title="Type" type="java.lang.Object">
+                      <Data value="workshop "/>
+                      <Data value="workshop "/>
+                      <Data value="animation "/>
+                      <Data value="workshop "/>
+                      <Data value="animation "/>
+                    </Column>
                     <Column editable="true" title="Event Name" type="java.lang.Object">
-                      <Data value="Cosplay"/>
-                      <Data value="Cosplay"/>
-                      <Data value="Cosplay"/>
-                      <Data value="Cosplay"/>
+                      <Data value="Manga workshop "/>
+                      <Data value="Manga workshop "/>
+                      <Data value="Anime-ation "/>
+                      <Data value="Manga workshop "/>
+                      <Data value="Anime-ation "/>
                     </Column>
-                    <Column editable="true" title="Event Description" type="java.lang.Object"/>
-                    <Column editable="true" title="Day" type="java.lang.Object"/>
-                    <Column editable="true" title="Time" type="java.lang.Object"/>
+                    <Column editable="true" title="Event Description" type="java.lang.Object">
+                      <Data value="This is event is for people who loves to draw anime. And will teach some tricks and tips on drawing of anime. "/>
+                      <Data value="This is event is for people who loves to draw anime. And will teach some tricks and tips on drawing of anime. "/>
+                      <Data value="This is event that will showcase different episodes of different anime. And is open to all anime loves out there, to those who missed their favorite anime episodes. Here&apos;s a chance to watch it. "/>
+                      <Data value="This is event is for people who loves to draw anime. And will teach some tricks and tips on drawing of anime. "/>
+                      <Data value="This is event that will showcase different episodes of different anime. And is open to all anime loves out there, to those who missed their favorite anime episodes. Here&apos;s a chance to watch it. "/>
+                    </Column>
+                    <Column editable="true" title="Day" type="java.lang.Object">
+                      <Data value="2"/>
+                      <Data value="2"/>
+                      <Data value="1"/>
+                      <Data value="2"/>
+                      <Data value="1"/>
+                    </Column>
+                    <Column editable="true" title="Time" type="java.lang.Object">
+                      <Data value="1:00-5:00"/>
+                      <Data value="1:00-5:00"/>
+                      <Data value="8:00-12:00"/>
+                      <Data value="1:00-5:00"/>
+                      <Data value="8:00-12:00, 1:00-5:00"/>
+                    </Column>
                     <Column editable="true" title="Price" type="java.lang.Object">
                       <Data value="100"/>
                       <Data value="100"/>
+                      <Data value="150"/>
                       <Data value="100"/>
-                      <Data value="100"/>
+                      <Data value="150"/>
                     </Column>
                   </Table>
                 </Property>
@@ -140,7 +167,7 @@
                       <Editor/>
                       <Renderer/>
                     </Column>
-                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                       <Title/>
                       <Editor/>
                       <Renderer/>
@@ -175,6 +202,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Delete"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

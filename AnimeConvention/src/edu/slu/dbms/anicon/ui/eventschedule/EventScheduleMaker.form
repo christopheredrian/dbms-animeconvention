@@ -55,7 +55,7 @@
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="EVENTSCHED MAKER"/>
+            <TitledBorder title="Event Schedule Maker"/>
           </Border>
         </Property>
       </Properties>
@@ -117,37 +117,37 @@
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="6">
-                    <Column editable="true" title="Sched No" type="java.lang.Object">
-                      <Data value="1"/>
-                      <Data value="2"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
+                    <Column editable="true" title="Schedule No" type="java.lang.Object">
+                      <Data value="S1001 "/>
+                      <Data value="S1002"/>
+                      <Data value="S1003"/>
+                      <Data value="S1004"/>
+                      <Data value="S1005"/>
+                      <Data value="S1006"/>
                     </Column>
                     <Column editable="true" title="Day" type="java.lang.Object">
                       <Data value="1"/>
                       <Data value="1"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
+                      <Data value="2"/>
+                      <Data value="2"/>
+                      <Data value="3"/>
+                      <Data value="3"/>
                     </Column>
                     <Column editable="true" title="Time Start" type="java.lang.Object">
                       <Data value="8:00"/>
                       <Data value="1:00"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
+                      <Data value="8:00"/>
+                      <Data value="1:00"/>
+                      <Data value="8:00"/>
+                      <Data value="1:00"/>
                     </Column>
                     <Column editable="true" title="Time End" type="java.lang.Object">
                       <Data value="12:00"/>
                       <Data value="5:00"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
+                      <Data value="12:00"/>
+                      <Data value="5:00"/>
+                      <Data value="12:00"/>
+                      <Data value="5:00"/>
                     </Column>
                   </Table>
                 </Property>
