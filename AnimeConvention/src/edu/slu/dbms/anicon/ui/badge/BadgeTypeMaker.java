@@ -92,8 +92,8 @@ public class BadgeTypeMaker extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(273, 273, 273)
                 .addComponent(jButton1)
-                .addGap(80, 80, 80)
-                .addComponent(jButton2)
+                .addGap(68, 68, 68)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(

@@ -40,16 +40,19 @@ public class TicketMaker extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"01", "Cosplay", "100", null, null},
-                {"02", "Cosplay", "100", null, null},
-                {"03", "Cosplay", "100", null, null},
-                {"04", "Cosplay", "100", null, null}
+                {"01", null, "Cosplay", null, null, null, "100"},
+                {"02", null, "Cosplay", null, null, null, "100"},
+                {"03", null, "Cosplay", null, null, null, "100"},
+                {"04", null, "Cosplay", null, null, null, "100"}
             },
             new String [] {
-                "Ticket No", "Event Name", "Price", "Date Claimed", "Status"
+                "Ticket No", "Type", "Event Name", "Event Description", "Day", "Time", "Price"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(4).setResizable(false);
+        }
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

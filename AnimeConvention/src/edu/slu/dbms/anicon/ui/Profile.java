@@ -54,7 +54,7 @@ public class Profile extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new java.awt.GridLayout());
+        getContentPane().setLayout(new java.awt.GridLayout(1, 0));
 
         wrapper.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -161,7 +161,7 @@ public class Profile extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Event", "Event Type", "Event Description", "Amount"
             }
         ));
         jScrollPane4.setViewportView(jXTable1);
